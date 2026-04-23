@@ -14,12 +14,12 @@ export default function HomeScreen() {
         // O "recheio" que realmente rola
         contentContainerStyle={styles.container}
       >
-        <Text style={styles.titulo}>ETEC Adolpho Berezin</Text>
+        <Text style={styles.titulo}>Desenvolvimento de Sistemas</Text>
 
         <View style={styles.card}>
-          <Text style={styles.subtitulo}>Desenvolvimento de Sistemas</Text>
+          <Text style={styles.subtitulo}>1MDS</Text>
           <Text style={styles.descricao}>
-            Curso completo para desenvolvedores desktop, web e mobile
+            Auxiliar em Desenvolvimento de Sistemas
           </Text>
         </View>
 
@@ -32,7 +32,7 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   background: {
     flex: 1,
-    backgroundColor: "#001a33", // Azul Marinho Profundo
+    backgroundColor: "cyan", // Ciano
   },
   container: {
     // IMPORTANTE: flexGrow permite que o justifyContent funcione no ScrollView
@@ -43,14 +43,14 @@ const styles = StyleSheet.create({
     gap: 20,
   },
   titulo: {
-    color: "#00d4ff", // Azul ciano brilhante (estilo Tech)
+    color: "blue", // Azul ciano brilhante (estilo Tech)
     fontSize: 32,
     fontWeight: "bold",
     letterSpacing: 2,
     marginBottom: 10,
   },
   card: {
-    backgroundColor: "rgba(255, 255, 255, 0.1)", // Branco transparente
+    backgroundColor: "rgba(255, 255, 255, 0.6)", // Branco transparente
     padding: 20,
     borderRadius: 15,
     width: "100%",
@@ -59,12 +59,12 @@ const styles = StyleSheet.create({
     borderColor: "#00d4ff",
   },
   subtitulo: {
-    color: "#FFF",
+    color: "black",
     fontSize: 20,
     fontWeight: "600",
   },
   descricao: {
-    color: "#ccc",
+    color: "darkcyan",
     textAlign: "center",
     marginTop: 10,
     lineHeight: 22,

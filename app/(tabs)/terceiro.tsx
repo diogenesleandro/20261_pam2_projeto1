@@ -14,12 +14,12 @@ export default function HomeScreen() {
         // O "recheio" que realmente rola
         contentContainerStyle={styles.container}
       >
-        <Text style={styles.titulo}>ETEC Adolpho Berezin</Text>
+        <Text style={styles.titulo}>Desenvolvimento de Sistemas</Text>
 
         <View style={styles.card}>
-          <Text style={styles.subtitulo}>Desenvolvimento de Sistemas</Text>
+          <Text style={styles.subtitulo}>3MDS</Text>
           <Text style={styles.descricao}>
-            Curso completo para desenvolvedores desktop, web e mobile
+            Técnico em Desenvolvimento de Sistemas
           </Text>
         </View>
 
@@ -32,7 +32,7 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   background: {
     flex: 1,
-    backgroundColor: "#001a33", // Azul Marinho Profundo
+    backgroundColor: "purple", // Azul Marinho Profundo
   },
   container: {
     // IMPORTANTE: flexGrow permite que o justifyContent funcione no ScrollView
@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   card: {
-    backgroundColor: "rgba(255, 255, 255, 0.1)", // Branco transparente
+    backgroundColor: "rgba(255, 255, 255, 0.4)", // Branco transparente
     padding: 20,
     borderRadius: 15,
     width: "100%",
@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
     lineHeight: 22,
   },
   textoFundo: {
-    color: "#555",
+    color: "rgba(255, 255, 255, 0.6)",
     fontSize: 12,
     marginTop: 20,
     textTransform: "uppercase",
