@@ -1,0 +1,250 @@
+[
+  {
+    "id": "1",
+    "ano": 1,
+    "nome": "Língua Portuguesa",
+    "carga": "80h",
+    "tipo": "Comum"
+  },
+  {
+    "id": "2",
+    "ano": 1,
+    "nome": "Língua Inglesa",
+    "carga": "40h",
+    "tipo": "Comum"
+  },
+  { "id": "3", "ano": 1, "nome": "Artes", "carga": "40h", "tipo": "Comum" },
+  {
+    "id": "4",
+    "ano": 1,
+    "nome": "Educação Física",
+    "carga": "40h",
+    "tipo": "Comum"
+  },
+  {
+    "id": "5",
+    "ano": 1,
+    "nome": "Matemática",
+    "carga": "80h",
+    "tipo": "Comum"
+  },
+  {
+    "id": "6",
+    "ano": 1,
+    "nome": "Ciências da Natureza (Bio/Fis/Qui)",
+    "carga": "120h",
+    "tipo": "Comum"
+  },
+  {
+    "id": "7",
+    "ano": 1,
+    "nome": "Ciências Humanas (His/Geo/Fil/Soc)",
+    "carga": "160h",
+    "tipo": "Comum"
+  },
+  {
+    "id": "8",
+    "ano": 1,
+    "nome": "Programação Web I",
+    "carga": "120h",
+    "tipo": "Técnico"
+  },
+  {
+    "id": "9",
+    "ano": 1,
+    "nome": "Projetos de TI",
+    "carga": "120h",
+    "tipo": "Técnico"
+  },
+  {
+    "id": "10",
+    "ano": 1,
+    "nome": "Programação e Algoritmos",
+    "carga": "120h",
+    "tipo": "Técnico"
+  },
+  {
+    "id": "11",
+    "ano": 1,
+    "nome": "Sistemas Embarcados e IoT",
+    "carga": "80h",
+    "tipo": "Técnico"
+  },
+  {
+    "id": "12",
+    "ano": 1,
+    "nome": "Banco de Dados I",
+    "carga": "40h",
+    "tipo": "Técnico"
+  },
+  {
+    "id": "13",
+    "ano": 1,
+    "nome": "Conduta Profissional",
+    "carga": "40h",
+    "tipo": "Técnico"
+  },
+
+  {
+    "id": "14",
+    "ano": 2,
+    "nome": "Língua Portuguesa",
+    "carga": "80h",
+    "tipo": "Comum"
+  },
+  {
+    "id": "15",
+    "ano": 2,
+    "nome": "Língua Inglesa",
+    "carga": "40h",
+    "tipo": "Comum"
+  },
+  {
+    "id": "16",
+    "ano": 2,
+    "nome": "Educação Física",
+    "carga": "40h",
+    "tipo": "Comum"
+  },
+  {
+    "id": "17",
+    "ano": 2,
+    "nome": "Matemática",
+    "carga": "120h",
+    "tipo": "Comum"
+  },
+  {
+    "id": "18",
+    "ano": 2,
+    "nome": "Ciências da Natureza",
+    "carga": "120h",
+    "tipo": "Comum"
+  },
+  {
+    "id": "19",
+    "ano": 2,
+    "nome": "Ciências Humanas",
+    "carga": "120h",
+    "tipo": "Comum"
+  },
+  {
+    "id": "20",
+    "ano": 2,
+    "nome": "Programação Web II",
+    "carga": "80h",
+    "tipo": "Técnico"
+  },
+  {
+    "id": "21",
+    "ano": 2,
+    "nome": "Banco de Dados II",
+    "carga": "80h",
+    "tipo": "Técnico"
+  },
+  {
+    "id": "22",
+    "ano": 2,
+    "nome": "Análise e Projeto de Sistemas",
+    "carga": "40h",
+    "tipo": "Técnico"
+  },
+  {
+    "id": "23",
+    "ano": 2,
+    "nome": "Projeto de Desenv. de Sistemas",
+    "carga": "40h",
+    "tipo": "Técnico"
+  },
+  {
+    "id": "24",
+    "ano": 2,
+    "nome": "Desenvolvimento de Sistemas I",
+    "carga": "120h",
+    "tipo": "Técnico"
+  },
+  {
+    "id": "25",
+    "ano": 2,
+    "nome": "Prog. de Aplicativos Mobile I",
+    "carga": "80h",
+    "tipo": "Técnico"
+  },
+
+  {
+    "id": "26",
+    "ano": 3,
+    "nome": "Língua Portuguesa",
+    "carga": "80h",
+    "tipo": "Comum"
+  },
+  {
+    "id": "27",
+    "ano": 3,
+    "nome": "Língua Espanhola",
+    "carga": "40h",
+    "tipo": "Comum"
+  },
+  {
+    "id": "28",
+    "ano": 3,
+    "nome": "Educação Física",
+    "carga": "40h",
+    "tipo": "Comum"
+  },
+  {
+    "id": "29",
+    "ano": 3,
+    "nome": "Matemática",
+    "carga": "120h",
+    "tipo": "Comum"
+  },
+  {
+    "id": "30",
+    "ano": 3,
+    "nome": "Ciências da Natureza",
+    "carga": "120h",
+    "tipo": "Comum"
+  },
+  {
+    "id": "31",
+    "ano": 3,
+    "nome": "Ciências Humanas",
+    "carga": "120h",
+    "tipo": "Comum"
+  },
+  {
+    "id": "32",
+    "ano": 3,
+    "nome": "Programação Web III",
+    "carga": "80h",
+    "tipo": "Técnico"
+  },
+  {
+    "id": "33",
+    "ano": 3,
+    "nome": "Prog. de Aplicativos Mobile II",
+    "carga": "80h",
+    "tipo": "Técnico"
+  },
+  {
+    "id": "34",
+    "ano": 3,
+    "nome": "Computação em Nuvem",
+    "carga": "80h",
+    "tipo": "Técnico"
+  },
+  {
+    "id": "35",
+    "ano": 3,
+    "nome": "Planejamento e Desenv. do TCC",
+    "carga": "120h",
+    "tipo": "Técnico"
+  },
+  {
+    "id": "36",
+    "ano": 3,
+    "nome": "Desenvolvimento de Sistemas II",
+    "carga": "80h",
+    "tipo": "Técnico"
+  }
+]
