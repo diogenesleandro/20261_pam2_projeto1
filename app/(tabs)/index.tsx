@@ -66,7 +66,7 @@ export default function HomeScreen() {
           Toque abaixo para ver o horário diário
         </Text>
 
-        {/* --- ACORDEON: SEGUNDA-FEIRA --- */}
+        {/* --- ACORDEON: Primeiro Ano --- */}
         <View style={styles.tabelaContainer}>
           <Pressable
             style={[
@@ -76,7 +76,7 @@ export default function HomeScreen() {
             onPress={() => toggleDia("segunda")}
           >
             <Text style={[styles.colunaHoraHeader, styles.textoHeader]}>
-              SEGUNDA - FEIRA
+              Primeiro Ano - 1MDS
             </Text>
             <Text style={[styles.colunaMateriaHeader, styles.textoHeader]}>
               {aberto === "segunda" ? "▲" : "▼"}
@@ -87,11 +87,20 @@ export default function HomeScreen() {
             <View style={styles.corpoAcordeon}>
               <View style={styles.linhaTabela}>
                 <View style={styles.colunaHora}>
-                  <Text style={styles.textoHora}>13:30</Text>
+                  <Text style={styles.textoHora}>L.P.</Text>
                 </View>
                 <View style={styles.colunaMateria}>
-                  <Text style={styles.textoMateria}>PAM II</Text>
-                  <Text style={styles.textoProfessor}>Prof. Diógenes</Text>
+                  <Text style={styles.textoMateria}>Lingua Portuguesa</Text>
+                  <Text style={styles.textoProfessor}>Profª. Meire</Text>
+                </View>
+              </View>
+              <View style={styles.linhaTabela}>
+                <View style={styles.colunaHora}>
+                  <Text style={styles.textoHora}>L.I.</Text>
+                </View>
+                <View style={styles.colunaMateria}>
+                  <Text style={styles.textoMateria}>Lingua Inglesa</Text>
+                  <Text style={styles.textoProfessor}>Profª. Meire</Text>
                 </View>
               </View>
               <View style={styles.linhaIntervalo}>
