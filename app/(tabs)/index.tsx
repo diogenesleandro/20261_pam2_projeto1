@@ -19,6 +19,91 @@ export default function HomeScreen() {
     setAberto(aberto === dia ? null : dia);
   };
 
+  // Constante com os dados da grade do primeiro ano
+  const dadosGradeCurricularPrimeiro = [
+    {
+      tipo: 'intervalo',
+      titulo: 'Base Comum'
+    },
+    { hora: 'L.P.', materia: 'Lingua Portuguesa', professor: 'Profª. Meire' },
+    { hora: 'L.I.', materia: 'Lingua Inglesa', professor: 'Profª. Meire' },
+    { hora: 'Arte', materia: 'Arte', professor: 'Prof. Fulano' },
+    { hora: 'E.F.', materia: 'Educação Física', professor: 'Profª. Meire' },
+    { hora: 'L.P.', materia: 'Lingua Portuguesa', professor: 'Profª. Meire' },
+    { hora: 'MAT.', materia: 'Matemática', professor: 'Profª. Meire' },
+    { hora: 'BIO', materia: 'Biologia', professor: 'Profª. Meire' },
+    { hora: 'FIS', materia: 'Física', professor: 'Profª. Meire' },
+    { hora: 'QUI', materia: 'Química', professor: 'Profª. Meire' },
+    { hora: 'HIS', materia: 'História', professor: 'Profª. Meire' },
+    { hora: 'GEO', materia: 'Geografia', professor: 'Profª. Meire' },
+    {
+      tipo: 'intervalo',
+      titulo: 'Base Técnica'
+    },
+    { hora: 'P.W.1', materia: 'Programação Web 1', professor: 'Profª. Meire' },
+    { hora: 'P.T.I.C.', materia: 'Projetos de Tecnologia de Informação e Comunicação', professor: 'Profª. Meire' },
+    { hora: 'P.A.', materia: 'Programação e Algoritmos', professor: 'Profª. Meire' },
+    { hora: 'S.E.I.', materia: 'Sistemas Embarcados e IoT', professor: 'Profª. Meire' },
+    { hora: 'C.P.R.T.', materia: 'Conduta Profissional e Relações de Trabalho', professor: 'Profª. Meire' },
+    { hora: 'B.D.1', materia: 'Banco de Dados I', professor: 'Profª. Meire' }
+  ];
+
+    // Constante com os dados da grade do segundo ano
+  const dadosGradeCurricularSegundo = [
+    {
+      tipo: 'intervalo',
+      titulo: 'Base Comum'
+    },
+    { hora: 'L.P.', materia: 'Lingua Portuguesa', professor: 'Profª. Meire' },
+    { hora: 'L.I.', materia: 'Lingua Inglesa', professor: 'Profª. Meire' },  
+    { hora: 'E.F.', materia: 'Educação Física', professor: 'Profª. Meire' },
+    { hora: 'L.P.', materia: 'Lingua Portuguesa', professor: 'Profª. Meire' },
+    { hora: 'MAT.', materia: 'Matemática', professor: 'Profª. Meire' },
+    { hora: 'BIO', materia: 'Biologia', professor: 'Profª. Meire' },
+    { hora: 'FIS', materia: 'Física', professor: 'Profª. Meire' },
+    { hora: 'QUI', materia: 'Química', professor: 'Profª. Meire' },
+    { hora: 'HIS', materia: 'História', professor: 'Profª. Meire' },
+    { hora: 'GEO', materia: 'Geografia', professor: 'Profª. Meire' },
+    { hora: 'FIL', materia: 'Filosofia', professor: 'Profª. Meire' },
+    {
+      tipo: 'intervalo',
+      titulo: 'Base Técnica'
+    },
+    { hora: 'P.W.2', materia: 'Programação Web II', professor: 'Profª. Meire' },
+    { hora: 'A.P.S.', materia: 'Análise e Projeto de Sistemas', professor: 'Profª. Meire' },
+    { hora: 'P.D.S.', materia: 'Projetos de Desenvolvimento de Sistemas', professor: 'Profª. Meire' },
+    { hora: 'D.S.1', materia: 'Desenvolvimento de Sistemas I', professor: 'Profª. Meire' },
+    { hora: 'P.A.M.1', materia: 'Programação de Aplicativos Mobile I', professor: 'Profª. Meire' },
+    { hora: 'B.D.2', materia: 'Banco de Dados 2', professor: 'Profª. Meire' }
+  ];
+
+    // Constante com os dados da grade do terceiro ano
+  const dadosGradeCurricularTerceiro = [
+    {
+      tipo: 'intervalo',
+      titulo: 'Base Comum'
+    },
+    { hora: 'L.P.', materia: 'Lingua Portuguesa', professor: 'Profª. Meire' },
+    { hora: 'L.I.', materia: 'Lingua Inglesa', professor: 'Profª. Meire' },  
+    { hora: 'L.P.', materia: 'Lingua Portuguesa', professor: 'Profª. Meire' },
+    { hora: 'MAT.', materia: 'Matemática', professor: 'Profª. Meire' },
+    { hora: 'BIO', materia: 'Biologia', professor: 'Profª. Meire' },
+    { hora: 'FIS', materia: 'Física', professor: 'Profª. Meire' },
+    { hora: 'QUI', materia: 'Química', professor: 'Profª. Meire' },
+    { hora: 'HIS', materia: 'História', professor: 'Profª. Meire' },
+    { hora: 'GEO', materia: 'Geografia', professor: 'Profª. Meire' },
+    { hora: 'SOC', materia: 'Sociologia', professor: 'Profª. Meire' },
+    {
+      tipo: 'intervalo',
+      titulo: 'Base Técnica'
+    },
+    { hora: 'P.W.3', materia: 'Programação Web III', professor: 'Profª. Meire' },
+    { hora: 'A.P.S.', materia: 'Análise e Projeto de Sistemas', professor: 'Profª. Meire' },
+    { hora: 'C.N.', materia: 'Computação na Nuvem', professor: 'Profª. Meire' },
+    { hora: 'D.S.2', materia: 'Desenvolvimento de Sistemas II', professor: 'Profª. Meire' },
+    { hora: 'P.A.M.2', materia: 'Programação de Aplicativos Mobile II', professor: 'Profª. Meire' },
+    { hora: 'P.D.T.C.C.', materia: 'Planejamento e Desenvolvimento do Trabalho de Conclusão de Curso (TCC) em Desenvolvimento de Sistemas ', professor: 'Profª. Meire' }
+  ];
   return (
     <View style={styles.background}>
       <StatusBar barStyle="light-content" />
@@ -71,99 +156,132 @@ export default function HomeScreen() {
           <Pressable
             style={[
               styles.linhaHeader,
-              aberto === "segunda" && styles.linhaHeaderAberta,
+              aberto === "primeiro" && styles.linhaHeaderAberta,
             ]}
-            onPress={() => toggleDia("segunda")}
+            onPress={() => toggleDia("primeiro")}
           >
             <Text style={[styles.colunaHoraHeader, styles.textoHeader]}>
               Primeiro Ano - 1MDS
             </Text>
             <Text style={[styles.colunaMateriaHeader, styles.textoHeader]}>
-              {aberto === "segunda" ? "▲" : "▼"}
+              {aberto === "primeiro" ? "▲" : "▼"}
             </Text>
           </Pressable>
 
-          {aberto === "segunda" && (
+          {aberto === "primeiro" && (
             <View style={styles.corpoAcordeon}>
-              <View style={styles.linhaTabela}>
-                <View style={styles.colunaHora}>
-                  <Text style={styles.textoHora}>L.P.</Text>
-                </View>
-                <View style={styles.colunaMateria}>
-                  <Text style={styles.textoMateria}>Lingua Portuguesa</Text>
-                  <Text style={styles.textoProfessor}>Profª. Meire</Text>
-                </View>
-              </View>
-              <View style={styles.linhaTabela}>
-                <View style={styles.colunaHora}>
-                  <Text style={styles.textoHora}>L.I.</Text>
-                </View>
-                <View style={styles.colunaMateria}>
-                  <Text style={styles.textoMateria}>Lingua Inglesa</Text>
-                  <Text style={styles.textoProfessor}>Profª. Meire</Text>
-                </View>
-              </View>
-              <View style={styles.linhaIntervalo}>
-                <Text style={styles.textoIntervalo}>15:10 - INTERVALO</Text>
-              </View>
-              <View style={styles.linhaTabela}>
-                <View style={styles.colunaHora}>
-                  <Text style={styles.textoHora}>15:30</Text>
-                </View>
-                <View style={styles.colunaMateria}>
-                  <Text style={styles.textoMateria}>PW III</Text>
-                  <Text style={styles.textoProfessor}>Prof. Fulano</Text>
-                </View>
-              </View>
+              {dadosGradeCurricularPrimeiro.map((item, index) => {
+                if (item.tipo === 'intervalo') {
+                  return (
+                    <View key={index} style={styles.linhaIntervalo}>
+                      <Text style={styles.textoIntervalo}>{item.titulo}</Text>
+                    </View>
+                  );
+                }
+
+                return (
+                  <View key={index} style={styles.linhaTabela}>
+                    <View style={styles.colunaHora}>
+                      <Text style={styles.textoHora}>{item.hora}</Text>
+                    </View>
+                    <View style={styles.colunaMateria}>
+                      <Text style={styles.textoMateria}>{item.materia}</Text>
+                      <Text style={styles.textoProfessor}>{item.professor}</Text>
+                    </View>
+                  </View>
+                );
+              })}
             </View>
           )}
         </View>
 
-        {/* --- ACORDEON: TERÇA-FEIRA --- */}
+          {/* --- ACORDEON: Segundo Ano --- */}
         <View style={styles.tabelaContainer}>
           <Pressable
             style={[
               styles.linhaHeader,
-              aberto === "terca" && styles.linhaHeaderAberta,
+              aberto === "segundo" && styles.linhaHeaderAberta,
             ]}
-            onPress={() => toggleDia("terca")}
+            onPress={() => toggleDia("segundo")}
           >
             <Text style={[styles.colunaHoraHeader, styles.textoHeader]}>
-              TERÇA - FEIRA
+              Primeiro Ano - 1MDS
             </Text>
             <Text style={[styles.colunaMateriaHeader, styles.textoHeader]}>
-              {aberto === "terca" ? "▲" : "▼"}
+              {aberto === "segundo" ? "▲" : "▼"}
             </Text>
           </Pressable>
 
-          {aberto === "terca" && (
+          {aberto === "segundo" && (
             <View style={styles.corpoAcordeon}>
-              <View style={styles.linhaTabela}>
-                <View style={styles.colunaHora}>
-                  <Text style={styles.textoHora}>13:30</Text>
-                </View>
-                <View style={styles.colunaMateria}>
-                  <Text style={styles.textoMateria}>Banco de Dados</Text>
-                  <Text style={styles.textoProfessor}>Prof. Ciclano</Text>
-                </View>
-              </View>
-              <View style={styles.linhaIntervalo}>
-                <Text style={styles.textoIntervalo}>15:10 - INTERVALO</Text>
-              </View>
-              <View style={styles.linhaTabela}>
-                <View style={styles.colunaHora}>
-                  <Text style={styles.textoHora}>15:30</Text>
-                </View>
-                <View style={styles.colunaMateria}>
-                  <Text style={styles.textoMateria}>Sistemas Embarcados</Text>
-                  <Text style={styles.textoProfessor}>Prof. Beltrano</Text>
-                </View>
-              </View>
+              {dadosGradeCurricularSegundo.map((item, index) => {
+                if (item.tipo === 'intervalo') {
+                  return (
+                    <View key={index} style={styles.linhaIntervalo}>
+                      <Text style={styles.textoIntervalo}>{item.titulo}</Text>
+                    </View>
+                  );
+                }
+
+                return (
+                  <View key={index} style={styles.linhaTabela}>
+                    <View style={styles.colunaHora}>
+                      <Text style={styles.textoHora}>{item.hora}</Text>
+                    </View>
+                    <View style={styles.colunaMateria}>
+                      <Text style={styles.textoMateria}>{item.materia}</Text>
+                      <Text style={styles.textoProfessor}>{item.professor}</Text>
+                    </View>
+                  </View>
+                );
+              })}
             </View>
           )}
         </View>
 
-        {/* Repetir a mesma lógica para Quarta, Quinta e Sexta trocando apenas a string no toggleDia e no teste do && */}
+        {/* --- ACORDEON: Terceiro Ano --- */}
+         <View style={styles.tabelaContainer}>
+          <Pressable
+            style={[
+              styles.linhaHeader,
+              aberto === "terceiro" && styles.linhaHeaderAberta,
+            ]}
+            onPress={() => toggleDia("terceiro")}
+          >
+            <Text style={[styles.colunaHoraHeader, styles.textoHeader]}>
+              Primeiro Ano - 1MDS
+            </Text>
+            <Text style={[styles.colunaMateriaHeader, styles.textoHeader]}>
+              {aberto === "terceiro" ? "▲" : "▼"}
+            </Text>
+          </Pressable>
+
+          {aberto === "terceiro" && (
+            <View style={styles.corpoAcordeon}>
+              {dadosGradeCurricularTerceiro.map((item, index) => {
+                if (item.tipo === 'intervalo') {
+                  return (
+                    <View key={index} style={styles.linhaIntervalo}>
+                      <Text style={styles.textoIntervalo}>{item.titulo}</Text>
+                    </View>
+                  );
+                }
+
+                return (
+                  <View key={index} style={styles.linhaTabela}>
+                    <View style={styles.colunaHora}>
+                      <Text style={styles.textoHora}>{item.hora}</Text>
+                    </View>
+                    <View style={styles.colunaMateria}>
+                      <Text style={styles.textoMateria}>{item.materia}</Text>
+                      <Text style={styles.textoProfessor}>{item.professor}</Text>
+                    </View>
+                  </View>
+                );
+              })}
+            </View>
+          )}
+        </View>
       </ScrollView>
     </View>
   );
